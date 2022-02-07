@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+
+#room_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d2dfbf;
+}
+#dining_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfc9ad;
+}
+#offers_container {
+    width: 100vw;
+}
+#facilities_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #859178;
+}
+#membership_container {
+    width: 100vw;
+}
