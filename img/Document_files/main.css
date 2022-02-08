@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* main room page */
+#room_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d2dfbf;
+    position: relative;
+}
+
+#horizontal_line {
+    background-color: #D7E4E8;
+    width: 100vw;
+    height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#room_box {
+    height: 80%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+#dining_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #bfc9ad;
+}
+#offers_container {
+    width: 100vw;
+}
+#facilities_container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #859178;
+}
+#membership_container {
+    width: 100vw;
+}

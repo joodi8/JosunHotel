@@ -1,16 +1,93 @@
 @charset "UTF-8";
 
-
+/* main room page */
 #room_container {
     width: 100vw;
     height: 100vh;
     background-color: #d2dfbf;
+    position: relative;
 }
+
+#horizontal_line {
+    background-color: #D7E4E8;
+    width: 100vw;
+    height: 60%;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#room_box {
+    width: 60%;
+    height: 70%;
+    background-color: aquamarine;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+}
+
+#room_imgbox {
+    width: 50%;
+    height: 100%;
+    background-color: #bfc9ad;
+    display: inline;
+}
+#room_textbox {
+    width: 50%;
+    height: 100%;
+    background-color: #859178;
+}
+
+
+
+/* main dining page */
+
 #dining_container {
     width: 100vw;
     height: 100vh;
-    background-color: #bfc9ad;
+    background-color: #E8EBEC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#dining_textbox {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+#dining_innerText {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dining_innerText > a {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background-color: #fff;
+    padding: 300px 180px;
+    border: #E8EBEC solid 2px;
+}
+
+#dining_imgbox {
+    width: 70%;
+    height: 80%;
+    background-color: rgb(211, 161, 152);
+}
+
+/* dining page 반응형 수정 필요 */
+
+
 #offers_container {
     width: 100vw;
 }
