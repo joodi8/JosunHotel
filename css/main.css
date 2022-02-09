@@ -75,7 +75,7 @@
     width: 30%;
     height: 30%;
     background-color: #fff;
-    padding: 300px 180px;
+    padding: 218px 180px;
     border: #E8EBEC solid 2px;
 }
 
@@ -87,15 +87,109 @@
 
 /* dining page 반응형 수정 필요 */
 
-
+/* main offers page */
 #offers_container {
     width: 100vw;
+    padding-top: 100px;
+    position: relative;
+    background-color: rgb(235, 149, 140);
 }
+#offers_title {
+    position: absolute;
+    z-index: 3;
+    width: 400px;
+    background-color: #fff;
+    text-align: center;
+    left: 75%;
+    top: 84px;
+}
+#offers_title p {
+    font-family: 'Staatliches'
+}
+#offers_title p:first-child {
+    font-size: 40px;
+    line-height: 0.8;
+}
+#offers_title p:nth-child(2) {
+    color: #C86B6B;
+}
+
+
+#offers_wrap {
+    border-top: #000 solid 2px;
+    height: 100%;
+    background-color: rosybrown;
+    display: flex;
+    justify-content: center;
+}
+.offers_innerBox {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.offers_innerBox.num1 {
+    background-color: bisque;
+}
+.offers_innerBox.num2 {
+    background-color: antiquewhite;
+}
+
+.offers_item {
+    width: 464px;
+    height: 610px;
+    background-color: #fff;
+    border: #000 solid 1px;
+}
+
+.offers_item.num2 {
+    margin: 240px 0 100px;
+}
+
+.offers_innerBox.num1 > .offers_item:nth-child(2),
+.offers_innerBox.num1 > .offers_item:nth-child(3) {
+    margin-top: 260px;
+}
+
+
+
+/* main facilities page */
 #facilities_container {
     width: 100vw;
-    height: 100vh;
+    height: 98vh;
     background-color: #859178;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
+
+#facilities_title {
+    position: absolute;
+    width: 320px;
+    background-color: #fff;
+    text-align: center;
+}
+#facilities_title p {
+    font-family: 'Staatliches'
+}
+#facilities_title p:first-child {
+    font-size: 40px;
+    line-height: 0.8;
+}
+#facilities_title p:nth-child(2) {
+    color: #C86B6B;
+}
+
+#facilities_wrap {
+    width: 100%;
+    background-color: wheat;
+    margin-top: 14px;
+    border-top: #000 solid 2px;
+}
+
+
 #membership_container {
     width: 100vw;
 }
