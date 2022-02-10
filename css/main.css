@@ -2,7 +2,7 @@
 
 /* main room page */
 #room_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #d2dfbf;
     position: relative;
@@ -10,7 +10,7 @@
 
 #horizontal_line {
     background-color: #D7E4E8;
-    width: 100vw;
+    width: 100%;
     height: 60%;
     position: absolute;
     top: 50%; left: 50%;
@@ -31,23 +31,53 @@
 }
 
 #room_imgbox {
-    width: 50%;
+    width: 45%;
     height: 100%;
     background-color: #bfc9ad;
     display: inline;
-}
-#room_textbox {
-    width: 50%;
-    height: 100%;
-    background-color: #859178;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.room_innerLine.num1 {
+    position: absolute;
+    border: #ffffff solid 1px;
+    width: 92%;
+    height: 94%;
+}
+.room_innerLine.num2 {
+    position: absolute;
+    border: #ffffff solid 1px;
+    width: 86%;
+    height: 89%;
+}
+
+
+
+
+#room_textbox {
+    width: 55%;
+    height: 100%;
+    background-color: #859178;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* flex-direction: column; */
+}
+
+#room_innerBox {
+    width: 80%;
+    height: 70%;
+    background-color: #fff;
+}
 
 
 /* main dining page */
 
 #dining_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #E8EBEC;
     display: flex;
@@ -74,7 +104,7 @@
 #dining_innerLine {
     position: absolute;
     width: 90%;
-    height: 90%;
+    height: 94%;
     background-color: #fff;
     border: #E8EBEC solid 2px;
 }
@@ -93,7 +123,7 @@
 
 /* main offers page */
 #offers_container {
-    width: 100vw;
+    width: 100%;
     padding-top: 100px;
     position: relative;
     background-color: rgb(235, 149, 140);
@@ -119,7 +149,7 @@
 }
 
 
-#offers_wrap {
+#offers_box {
     border-top: #000 solid 2px;
     height: 100%;
     background-color: rosybrown;
@@ -161,7 +191,7 @@
 
 /* main facilities page */
 #facilities_container {
-    width: 100vw;
+    width: 100%;
     height: 98vh;
     background-color: #859178;
     position: relative;
@@ -186,7 +216,7 @@
     color: #C86B6B;
 }
 
-#facilities_wrap {
+#facilities_box {
     width: 100%;
     background-color: wheat;
     margin-top: 14px;
@@ -196,13 +226,13 @@
 
 /* main membership page */
 #membership_container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: thistle;
     display: flex;
     align-items: center;
 }
-#membership_wrap {
+#membership_box {
     width: 100%;
     height: 40%;
     background-color: #fff;
