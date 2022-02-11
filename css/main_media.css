@@ -1,0 +1,67 @@
+
+@media screen and (max-width:767px){
+
+
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+
+
+}
+
+@media screen and (min-width:1024px) and (max-width: 1439px) {}
+
+@media screen and (min-width:1440px) and (max-width: 1919px) {
+
+    #horizontal_line {
+        height: 40%;
+    }
+
+    #room_box {
+        width: 80%;
+        height: 60%;
+    }
+
+    #room_imgbox {
+        width: 50%;
+        height: 100%;
+    }
+
+    #room_textbox {
+        width: 50%;
+        height: 100%;
+    }
+
+    #room_innerBox {
+        width: 75%;
+        height: 70%;
+    }
+
+
+
+    #dining_innerText {
+        position: relative;
+        width: 90%;
+        height: 100%;
+    }
+    #dining_textbox {
+        width: 40%;
+        height: 60%;
+    }
+
+    #dining_innerLine {
+        position: absolute;
+        width: 90%;
+        height: 92%;
+    }
+
+    #dining_imgbox {
+        width: 60%;
+        height: 60%;
+    }
+
+}
+
+@media screen and (min-width:1920px) {
+
+}
