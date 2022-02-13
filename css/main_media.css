@@ -109,7 +109,7 @@
     #membership_textBox {
         font-size: 16px;
     }
-
+}
 
 @media screen and (min-width:1024px) and (max-width: 1439px) {
 
@@ -188,9 +188,6 @@
     .offers_item {
         margin: 160px 0;
     }
-    
-    
-
 
 }
 
@@ -242,6 +239,22 @@
         width: 60%;
         height: 60%;
     }
+
+
+    #offers_title {
+        left: 70%;
+        width: 360px;
+    }
+
+    
+        
+    
+    .offers_item {
+        width: 380px;
+        height: 570px;
+    }
+    
+    
 
 }
 
