@@ -193,7 +193,6 @@
 
 /* main facilities page */
 #facilities_container {
-    width: 100%;
     height: 98vh;
     background-color: #859178;
     position: relative;
@@ -228,7 +227,6 @@
 
 /* main membership page */
 #membership_container {
-    width: 100%;
     height: 100vh;
     background-color: thistle;
     display: flex;

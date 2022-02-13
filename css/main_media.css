@@ -6,10 +6,193 @@
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
 
+    #horizontal_line {
+        height: 30%;
+    }
+
+    #room_box {
+        width: 90%;
+        height: 40%;
+    }
+
+    #room_imgbox {
+        width: 50%;
+        height: 100%;
+    }
+
+    #room_textbox {
+        width: 50%;
+        height: 100%;
+    }
+
+    #room_innerBox {
+        width: 75%;
+        height: 70%;
+    }
+
+
+
+    #dining_innerText {
+        width: 100%;
+    }
+    #dining_textbox {
+        width: 35%;
+        height: 30%;
+    }
+
+    #dining_innerLine {
+        position: absolute;
+        width: 92%;
+        height: 94%;
+    }
+
+    #dining_imgbox {
+        width: 65%;
+        height: 30%;
+    }
+
+    
+
+    #offers_title {
+        width: 260px;
+        left: 60%;
+        top: 88px;
+
+    }
+    #offers_title p:first-child {
+        font-size: 32px;
+        line-height: 0.8;
+    }
+
+    
+    
+    .offers_innerBox {
+        margin: 80px 0 160px;
+
+        padding: 0 40px;
+    }
+    
+    .offers_innerBox.num2 {
+        margin-top: 340px;
+    }
+    
+    
+    .offers_item {
+        width: 240px;
+        height: 360px;
+    }
+    
+    .offers_item {
+        margin: 100px 0;
+    }
+    
+    #facilities_title {
+        width: 260px;
+        top: 5px;
+    }
+    #facilities_title p:first-child {
+        font-size: 32px;
+        line-height: 0.8;
+    }
+
+
+    #membership_box {
+        height: 30%;
+    }
+
+    #membership_title {
+        padding-bottom: 24px;
+    }
+    #membership_title p:first-child {
+        font-size: 32px;
+    }
+    #membership_textBox {
+        font-size: 16px;
+    }
+
+
+@media screen and (min-width:1024px) and (max-width: 1439px) {
+
+    #horizontal_line {
+        height: 30%;
+    }
+
+    #room_box {
+        width: 90%;
+        height: 50%;
+    }
+
+    #room_imgbox {
+        width: 50%;
+    }
+
+    #room_textbox {
+        width: 50%;
+        height: 100%;
+    }
+
+    #room_innerBox {
+        width: 75%;
+        height: 70%;
+    }
+
+
+
+    #dining_innerText {
+        position: relative;
+        width: 90%;
+        height: 100%;
+    }
+    #dining_textbox {
+        width: 40%;
+        height: 50%;
+    }
+
+    #dining_innerLine {
+        position: absolute;
+        width: 90%;
+        height: 94%;
+    }
+
+    #dining_imgbox {
+        width: 60%;
+        height: 50%;
+    }
+
+    
+
+    #offers_title {
+        left: 55%;
+    }
+
+    
+    
+    .offers_innerBox {
+        margin: 80px 0 160px;
+
+        padding: 0 40px;
+    }
+    
+    .offers_innerBox.num2 {
+        margin-top: 400px;
+    }
+    
+    
+    .offers_item {
+        width: 340px;
+        height: 510px;
+        background-color: #fff;
+        border: #000 solid 1px;
+    }
+    
+    .offers_item {
+        margin: 160px 0;
+    }
+    
+    
+
 
 }
-
-@media screen and (min-width:1024px) and (max-width: 1439px) {}
 
 @media screen and (min-width:1440px) and (max-width: 1919px) {
 
