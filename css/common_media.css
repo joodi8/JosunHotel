@@ -1,0 +1,50 @@
+@media screen and (max-width:767px){
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    #groupL {
+        width: 30%;
+    }
+    #groupR {
+        width: 30%;
+    }
+    
+    .top_logo {
+        width: 40%;
+    }
+
+
+    #all_menu{
+        height: 60%;
+    }
+
+    .firstWrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .firstWrap > li {
+        padding: 0 20px;
+        /* text-align: center; */
+    }
+    .secondWrap {
+        /* padding-top: 40px; */
+    }
+    .lastWrap {
+        display: none;
+    }
+
+
+
+    #openOffers_wrap {
+        width: 320px;
+        height: 50%;
+    }
+    #openOffers_contentBox {
+        width: 280px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+}
