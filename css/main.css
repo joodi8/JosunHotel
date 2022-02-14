@@ -2,7 +2,7 @@
 
 /* main room page */
 #room_container {
-    height: 100vh;
+    height: 1080px;
     background-color: #d2dfbf;
     position: relative;
 }
@@ -18,7 +18,7 @@
 
 #room_box {
     width: 60%;
-    height: 70%;
+    height: 80%;
     background-color: aquamarine;
     position: absolute;
     top: 50%; left: 50%;
@@ -76,7 +76,7 @@
 /* main dining page */
 
 #dining_container {
-    height: 100vh;
+    height: 1080px;
     background-color: #E8EBEC;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@
 
 #dining_textbox {
     width: 40%;
-    height: 70%;
+    height: 80%;
     display: flex;
     justify-content: flex-end;
 }
@@ -115,7 +115,7 @@
 
 #dining_imgbox {
     width: 60%;
-    height: 70%;
+    height: 80%;
     background-color: rgb(211, 161, 152);
 }
 
@@ -193,7 +193,7 @@
 
 /* main facilities page */
 #facilities_container {
-    height: 98vh;
+    height: 1080px;
     background-color: #859178;
     position: relative;
     display: flex;

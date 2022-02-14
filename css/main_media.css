@@ -1,6 +1,103 @@
 
 @media screen and (max-width:767px){
+    #offers_title {
+        width: 220px;
+        left: 50%;
+        transform: translate(-50%);
+        top: 90px;
+    }
+    #offers_title p:first-child {
+        font-size: 28px;
+        line-height: 0.8;
+    }
+    #offers_title p:nth-child(2) {
+        font-size: 16px;
+    }
 
+    .offers_innerBox {
+    margin: 40px 0;
+    }
+
+    .offers_item.num1 {
+        margin: 40px 0;
+    }
+
+    .offers_innerBox.num2 {
+        display: none;
+    }
+    
+    
+    .offers_innerBox {
+        margin: 80px 0;
+        padding: 0 40px;
+    }
+    
+    .offers_innerBox.num2 {
+        margin-top: 340px;
+    }
+    
+    
+    .offers_item {
+        width: 240px;
+        height: 360px;
+    }
+    
+    .offers_item {
+        margin: 100px 0;
+    }
+
+
+
+    #facilities_title {
+        width: 200px;
+        top: 5px;
+    }
+    #facilities_title p:first-child {
+        font-size: 28px;
+        line-height: 0.8;
+    }
+    #facilities_title p:nth-child(2) {
+        font-size: 16px;
+    }
+
+
+
+    #membership_box {
+        height: 50%;
+    }
+    #membership_title {
+        padding-bottom: 20px;
+    }
+
+    #membership_title p:first-child {
+        font-size: 28px;
+        line-height: 0.8;
+    }
+    #membership_title p:nth-child(2) {
+        font-size: 16px;
+    }
+
+    #membership_textBox {
+        padding: 0 20px;
+    }
+    #membership_textBox p {
+        font-size: 16px;
+    }
+    #membership_textBox p:nth-child(2) {
+        display: none;
+    }
+
+
+    #membership_moreBox {
+        width: 100px;
+        height: 32px;
+        line-height: 32px;
+
+        margin-top: 20px;
+    }
+    #membership_moreBox p {
+        font-size: 16px;
+    }
 
 }
 
@@ -12,7 +109,7 @@
 
     #room_box {
         width: 90%;
-        height: 40%;
+        height: 50%;
     }
 
     #room_imgbox {
@@ -37,7 +134,7 @@
     }
     #dining_textbox {
         width: 35%;
-        height: 30%;
+        height: 50%;
     }
 
     #dining_innerLine {
@@ -48,7 +145,7 @@
 
     #dining_imgbox {
         width: 65%;
-        height: 30%;
+        height: 50%;
     }
 
     
@@ -114,12 +211,12 @@
 @media screen and (min-width:1024px) and (max-width: 1439px) {
 
     #horizontal_line {
-        height: 30%;
+        height: 40%;
     }
 
     #room_box {
         width: 90%;
-        height: 50%;
+        height: 60%;
     }
 
     #room_imgbox {
@@ -145,7 +242,7 @@
     }
     #dining_textbox {
         width: 40%;
-        height: 50%;
+        height: 60%;
     }
 
     #dining_innerLine {
@@ -156,7 +253,7 @@
 
     #dining_imgbox {
         width: 60%;
-        height: 50%;
+        height: 60%;
     }
 
     
@@ -170,23 +267,23 @@
     .offers_innerBox {
         margin: 80px 0 160px;
 
-        padding: 0 40px;
+        padding: 0 80px;
     }
     
     .offers_innerBox.num2 {
-        margin-top: 400px;
+        margin-top: 360px;
     }
     
     
     .offers_item {
-        width: 340px;
-        height: 510px;
+        width: 300px;
+        height: 450px;
         background-color: #fff;
         border: #000 solid 1px;
     }
     
     .offers_item {
-        margin: 160px 0;
+        margin: 140px 0;
     }
 
 }
@@ -199,7 +296,7 @@
 
     #room_box {
         width: 80%;
-        height: 60%;
+        height: 70%;
     }
 
     #room_imgbox {
@@ -226,7 +323,7 @@
     }
     #dining_textbox {
         width: 40%;
-        height: 60%;
+        height: 70%;
     }
 
     #dining_innerLine {
@@ -237,7 +334,7 @@
 
     #dining_imgbox {
         width: 60%;
-        height: 60%;
+        height: 70%;
     }
 
 
