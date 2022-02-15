@@ -226,9 +226,8 @@
 
 
 /* main membership page */
-#membership_container {
+#parallax-window {
     height: 100vh;
-    background-color: thistle;
     display: flex;
     align-items: center;
 }
