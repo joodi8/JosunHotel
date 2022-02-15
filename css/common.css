@@ -56,7 +56,7 @@ header {
     /* align-self: center; */
     }
 .firstWrap {
-    width: 55%;
+    width: 60%;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -64,14 +64,24 @@ header {
     transform: translate(-50%);
     padding-bottom: 20px;
 }
+.firstWrap > li {
+    color:indianred;
+    font-size: 28px;
+    font-family: 'Staatliches'
+}
 .secondWrap {
     padding-top: 10px;
+    color: #000;
+    font-size: 20px;
 }
 .secondWrap > li {
     padding-top: 10px;
 }
 .lastWrap {
     padding-left: 10px;
+    font-size: 18px;
+    color: #777777;
+
 }
 #openOffers_wrap {
     position: relative;
@@ -240,30 +250,6 @@ footer {
 #ceoBox2 p:nth-child(2) {
     font-size: 10px;
 }
-
-@media screen and (max-width:767px){
-
-	/* 모바일 CSS */
-
-}
-
-@media screen and (min-width:768px) and (max-width: 1023px) {
-
-	/* 테블릿 CSS */
-    #groupL {
-        width: 30%;
-    }
-    #groupR {
-        width: 30%;
-    }
-    .top_logo {
-        width: 30%;
-    }
-}
-
-@media screen and (min-width:1024px) {
-
-	/* PC CSS */
-
-
+#ceoBox1 > img {
+    display: none;
 }
