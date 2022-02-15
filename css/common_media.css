@@ -15,25 +15,57 @@
 
 
     #all_menu{
+        width: 40%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        transform: unset;
+        padding-top: 10px;
     }
 
     .firstWrap {
-        width: 100%;
-        display: flex;
+        flex-direction: column;
+        left: 20px;
+        transform: unset;
+
+        /* align-items: center; */
+        /* text-align: center; */
+        
+
         /* justify-content: space-evenly; */
     }
     .firstWrap > li {
-        padding: 0 20px;
+        color:indianred;
+        font-size: 30px;
+        font-family: 'Staatliches'
+
         /* text-align: center; */
     }
     .secondWrap {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        padding: 4px 0;
+        color: #777777;
+        font-size: 20px;
+        font-weight: bold;
         /* padding-top: 40px; */
+        /* display: none; */
+    }
+    .secondWrap > li {
+        padding-top: 4px;
     }
 
     .lastWrap {
+        padding: 0;
+        font-size: 16px;
         display: none;
     }
+    .lastWrap > li {
+        padding: 2px 0;
+    }
+
 
 
     #openOffers_wrap {
