@@ -28,6 +28,7 @@ header {
     /* padding: 0 60px; */
     display: flex;
     justify-content: space-between;
+    z-index: 5;
 }
 #groupL {
     width: 30%;
@@ -44,15 +45,16 @@ header {
 }
 
 #all_menu{
-    /* display: none; */
+    display: none;
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-color: #fff;
     opacity: 0.8;
     position: absolute;
     top: 100px; left: 50%;
     transform: translate(-50%);
     padding-top: 20px;
+    z-index: 5;
     /* align-self: center; */
     }
 .firstWrap {
@@ -156,11 +158,63 @@ header {
     color: #777777;
 }
 
+
+
+
+/* slickFade */
+.swiperContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+swiper-wrapper{
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.swiper-slide.fade1 {
+    background: url('../img/header/HeaderMain/Main01_1920x1000.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.fade2 {
+    background: url('../img/header/HeaderMain/Main02_1920x900.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.swiperTextBox {
+    color: #fff;
+    line-height: 0.9;
+    position: absolute;
+    top: 55%; left: 50%;
+    transform: translate(-50%);
+}
+
+.swiperTextBox p:first-child {
+    font-size: 40px;
+    font-family: 'Staatliches'
+}
+.swiperTextBox p:nth-child(2) {
+    font-size: 120px;
+    font-family: 'Staatliches'
+}
+.swiperTextBox p:last-child {
+    font-size: 24px;
+}
+
+
 #booking_container {
-    /* width: 100vw; */
-    height: 80px;
+    width: 100%;
+    height: 100px;
     background-color: #e9967a;
     opacity: 0.6;
+    z-index: 5;
 }
 
 /* 

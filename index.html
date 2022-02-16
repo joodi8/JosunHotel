@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/common_media.css">
@@ -137,8 +138,28 @@
                 <div class="openOffers_content more"></div>
             </div>
         </div>
-        <div id="swipe_container"></div>
-        <div id="booking_container"></div>
+        <div class="swiperContainer fade1">
+            <div class="swiper-wrapper fade1">                
+                <div class="swiper-slide fade1">
+                    <div class="swiperTextBox">                    
+                        <p>spring package</p>
+                        <p>SPRING VOYAGE</p>
+                        <p>낭만적인 제주의 봄을 담은 달콤한 휴식</p>
+                    </div>
+                </div>
+                <div class="swiper-slide fade2">
+                    <div class="swiperTextBox">
+                        <p>spring package</p>
+                        <p>BLOOMING DAYS</p>
+                        <p>에메랄드 빛 바다와 천혜의 자연이 만들어내는 특별한 공간</p>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div id="booking_container"></div>
+            </div>
+        </div>
     </header>
     <article>
         <section id="room_container">
@@ -260,9 +281,11 @@
                 <p>Copyright © 2020 JOSUN HOTELS & RESORTS Co. All rights reserved.</p>
         </dic>
     </footer>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/parallax.js"></script>
-    <script src="/js/common.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
