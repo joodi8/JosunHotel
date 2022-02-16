@@ -25,7 +25,6 @@ header {
     height: 100px;
     background-color: sandybrown;
     opacity: 0.5;
-    /* padding: 0 60px; */
     display: flex;
     justify-content: space-between;
     z-index: 5;
@@ -55,7 +54,6 @@ header {
     transform: translate(-50%);
     padding-top: 20px;
     z-index: 5;
-    /* align-self: center; */
     }
 .firstWrap {
     width: 60%;
@@ -106,10 +104,8 @@ header {
 #openOffers_tab {
     width: 40px;
     height: 200px;
-    /* background-color: #acb2ec; */
     position: relative;
     position: absolute;
-    /* -webkit-transform: rotate(270deg); */
 }
 .offers_tabName {
     position: absolute;
@@ -143,7 +139,6 @@ header {
     -ms-transform: rotate(270deg); 
     -webkit-transform: rotate(270deg); transform: rotate(270deg); 
     top: 130px; 
-    /* left: -21px;  */
     left: -20px; 
 }
 
@@ -187,65 +182,42 @@ swiper-wrapper{
     background-size: cover;
     background-position: center;
 }
+.swiper-slide > a {
+    background-color: rgba(250, 250, 250, 0.3);
+}
 
 .swiperTextBox {
     color: #fff;
     line-height: 0.9;
+    padding: 80px;
+    border: #fff solid 1px;
+    z-index: 1;
 }
 
-.swiperTextBox p:first-child {
+.swiperTextBox > p:first-child {
     font-size: 40px;
     font-family: 'Staatliches'
 }
-.swiperTextBox p:nth-child(2) {
+.swiperTextBox > p:nth-child(2) {
     font-size: 120px;
     font-family: 'Staatliches'
 }
-.swiperTextBox p:last-child {
+.swiperTextBox > p:nth-child(3) {
+    font-size: 28px;
+}
+.swiperTextBox > p:nth-child(4) {
+    font-weight: 300;
     font-size: 24px;
+    padding-top: 20px;
 }
 
 
 #booking_container {
-    height: 40%;
+    height: 35%;
     background-color: #e9967a;
     opacity: 0.6;
     z-index: 5;
 }
-
-/* 
-#openOffers_wrap {
-    width: 484px;
-    height: 480px;
-    background-color: #fff;
-    display: flex;
-    top: 100px; left: 100%;
-    transform: translate(-100%);
-    position: absolute;
-}
-
-#openOffers_wrap > ul > li {
-    width: 90px;
-    height: 40px;
-    background-color: #C86B6B;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.openOffers_tab {
-    width: 100px;
-    height: 100px;
-    background-color: #e9967a;
-}
-
-.openOffers_tab a > p {
-    -webkit-transform: rotateZ(270deg); 
-    padding-right: 20px;
-} */
-
-
-
 
 
 
