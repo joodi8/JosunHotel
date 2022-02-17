@@ -8,6 +8,23 @@
 a { text-decoration: none !important; }
 img { border: 0; }
 ul { list-style: none; }
+button{
+    background: inherit; 
+    border: none; 
+    box-shadow: none; 
+    border-radius: 0; 
+    padding: 0; 
+    overflow: visible; 
+    cursor: pointer; 
+}
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: inherit; 
+}
+select::-ms-expand { display: none; }
 
 /* header page */
 header {
@@ -32,11 +49,59 @@ header {
 }
 #groupL {
     width: 30%;
-    background-color: #b7c499;
+    display: flex;
+    align-items: center;
+    padding: 0 60px;
+}
+
+#top_findHotel {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 20px;
+}
+#top_findHotel a {
+    color: #000;
+}
+
+
+#top_langArea {
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    padding-right: 20px;
+}
+#top_langArea a {
+    color: #333333;
 }
 #groupR {
     width: 30%;
-    background-color: #76815a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 60px;
+}
+#top_openOffers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#top_util {
+    font-size: 16px;
+    padding: 0 16px;
+}
+#top_util a {
+    color: #333333;
+    padding: 4px;
+
+}
+.openOffers_icon {
+    width: 60px;
+    height: 60px;
+    background-color: #C86B6B;
+    border-radius: 5px;
 }
 
 #logoBox {
@@ -228,6 +293,32 @@ swiper-wrapper{
     opacity: 0.6;
     z-index: 5;
 }
+
+#sortDropdown {
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: url('../img/header/Booking/bk_arrow.png') no-repeat 95% 50%/20px auto;
+    font-size: 30px;
+    font-family: 'Staatliches'
+    
+}
+#openOffers_icon {
+    width: 200px;
+}
+#dateText {
+    /* width: 610px; */
+    height: 40px;
+    font-size: 24px;
+}
+/* .sortOption:after {
+    background: url('../img/header/Booking/bk_arrow.png') ;  
+    content: "";
+    display: inline-block;
+    height: 12px;
+    width: 12px;    
+    margin: 0 3px 0 8px;
+} */
 
 
 

@@ -18,9 +18,17 @@
     <header>
         <div id="gnb_container">
             <div id="groupL">
-                <button type="button" class="nav_icon">메뉴열기</button>
-                <div id="top_findHotel"></div>
-                <div id="top_langArea"></div>
+                <button type="button" class="all_menuIcon"><img src="./img/header/gnb/nav_open_B.png" alt="메뉴"></button>
+                <div id="top_findHotel">
+                    <a href="#" class="search">SEARCH HOTEL
+                        <img src="./img/header/gnb/search_iconB.png" width="20" height="20">
+                    </a>
+                </div>
+                <div id="top_langArea">
+                    <a href="#">KR
+                        <img src="./img/header/gnb/arrow_icon_B.png">
+                    </a>
+                </div>
             </div>
             <div id="logoBox">
                 <a href="#" class="top_logo">
@@ -30,8 +38,16 @@
             </div>
             <!-- <div id="top_logo"></div> -->
             <div id="groupR">
-                <div id="top_util"></div>
-                <div id="top_openOffers"></div>
+                <div id="top_util">
+                    <a href="#">로그인</a>
+                    <a href="#">예약확인</a>
+                    <a href="#">MEMBERSHIP</a>
+                </div>
+                <div id="top_openOffers">
+                    <button type="button" class="openOffers_icon">
+                        <img src="./img/header/gnb/open_offers_button.png" alt="오퍼">
+                    </button>
+                </div>
             </div>
         </div>
         <div id="all_menu">
@@ -168,7 +184,19 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div id="booking_container"></div>
+        <div id="booking_container">
+            <select name="bookingSort" id="sortDropdown">
+                <option class="sortOption" value="room">ROOM</option>
+                <option class="sortOption" value="dining">DINING</option>
+                <option class="sortOption" value="dining">MEMBERSHIP</option>
+            </select>
+            <div id="checkInOut">
+                <p>CHECK IN _ CHECK OUT</p>
+                <button type="button" class="checkInOut_Date">
+                    <div id="dateText"></div>
+                </button>
+            </div>
+        </div>
     </header>
     <article>
         <section id="room_container">
