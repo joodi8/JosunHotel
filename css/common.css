@@ -300,7 +300,7 @@ swiper-wrapper{
 #sortDropdown {
     /* width: 200px; */
     height: 40px;
-    padding-right: 50px;
+    padding: 0 50px 0 20px;
     text-align: center;
     background: url('../img/header/Booking/bk_arrow.png') no-repeat 95% 50%/20px auto;
     font-size: 30px;
