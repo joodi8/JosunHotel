@@ -289,27 +289,47 @@ swiper-wrapper{
 
 #booking_container {
     height: 35%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
     background-color: #e9967a;
     opacity: 0.6;
     z-index: 5;
 }
 
 #sortDropdown {
-    width: 200px;
+    /* width: 200px; */
     height: 40px;
+    padding-right: 50px;
     text-align: center;
     background: url('../img/header/Booking/bk_arrow.png') no-repeat 95% 50%/20px auto;
     font-size: 30px;
     font-family: 'Staatliches'
-    
+}
+.sortOption {
+    /* margin: 0 20px; */
 }
 #openOffers_icon {
     width: 200px;
 }
+.checkInOut_Date > div {
+    display: inline-block;
+    text-align: center;
+}
+.checkInOut_Date > div > p {
+    color: #333333;
+    font-size: 20px;
+    font-family: 'Staatliches'
+
+}
+
 #dateText {
+    display: inline-block;
     /* width: 610px; */
     height: 40px;
-    font-size: 24px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 20px;
 }
 /* .sortOption:after {
     background: url('../img/header/Booking/bk_arrow.png') ;  
