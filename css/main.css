@@ -3,7 +3,7 @@
 /* main room page */
 #room_container {
     height: 1080px;
-    background-color: #d2dfbf;
+    /* background-color: #d2dfbf; */
     position: relative;
 }
 
@@ -19,7 +19,6 @@
 #room_box {
     width: 60%;
     height: 80%;
-    background-color: aquamarine;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -29,28 +28,74 @@
     /* position: relative; */
 }
 
+
 #room_imgbox {
     width: 45%;
     height: 100%;
-    background-color: #bfc9ad;
     display: inline;
     position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.swiper-wrapper.autoplay > .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+}
+
+.swiper-slide.autoplay1R {
+    background: url('../img/content/01RoomSection/LuxurySuite01.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay2R {
+    background: url('../img/content/01RoomSection/KidsDeluxe02.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay3R {
+    background: url('../img/content/01RoomSection/KidsPremierSuite01.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay4R {
+    background: url('../img/content/01RoomSection/Deluxe02.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay5R {
+    background: url('../img/content/01RoomSection/LuxurySuite02.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
 
 .room_innerLine.num1 {
     position: absolute;
     border: #ffffff solid 1px;
     width: 92%;
     height: 94%;
+    z-index: 1;
 }
 .room_innerLine.num2 {
     position: absolute;
     border: #ffffff solid 1px;
     width: 86%;
     height: 89%;
+    z-index: 1;
 }
 
 
@@ -116,8 +161,48 @@
 #dining_imgbox {
     width: 60%;
     height: 80%;
+    position: relative;
+    overflow: hidden;
     background-color: rgb(211, 161, 152);
 }
+
+
+.swiper-slide.autoplay1D {
+    background: url('../img/content/02DiningSection/Dining01_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay2D {
+    background: url('../img/content/02DiningSection/Dining02_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay3D {
+    background: url('../img/content/02DiningSection/Dining03_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay4D {
+    background: url('../img/content/02DiningSection/Dining04_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay5D {
+    background: url('../img/content/02DiningSection/Dining05_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay6D {
+    background: url('../img/content/02DiningSection/Dining06_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide.autoplay7D {
+    background: url('../img/content/02DiningSection/Dining07_1300x820.png');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* dining page 반응형 수정 필요 */
 
@@ -222,6 +307,47 @@
     background-color: wheat;
     margin-top: 14px;
     border-top: #000 solid 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev {
+
+    left: -30px;
+}
+.slick-next {
+    right: -25px
+}
+.facilities_wrap {
+    width: 80%;
+    height: 820px;
+    background-color: tomato;
+    position: relative;
 }
 
 

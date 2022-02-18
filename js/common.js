@@ -1,4 +1,4 @@
-let swiper = new Swiper(".swiperContainer.fade1", {
+let headerswiper = new Swiper(".swiperContainer.fade1", {
     spaceBetween: 30,
     effect: "fade",
     autoplay: {

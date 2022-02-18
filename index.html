@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/common_media.css">
@@ -207,6 +209,15 @@
             <div id="horizontal_line"></div>
             <div id="room_box">
                 <div id="room_imgbox">
+                    <div class="swiperContainer roompage">
+                        <div class="swiper-wrapper autoplay">                
+                            <div class="swiper-slide autoplay1R"></div>
+                            <div class="swiper-slide autoplay2R"></div>
+                            <div class="swiper-slide autoplay3R"></div>
+                            <div class="swiper-slide autoplay4R"></div>
+                            <div class="swiper-slide autoplay5R"></div>
+                        </div>
+                    </div>
                     <div class="room_innerLine num1"></div>
                     <div class="room_innerLine num2"></div>
                 </div>
@@ -224,7 +235,19 @@
                     <div id="dining_innerLine"></div>
                 </div>
             </div>
-            <div id="dining_imgbox"></div>
+            <div id="dining_imgbox">
+                <div class="swiperContainer diningpage">
+                    <div class="swiper-wrapper autoplay">                
+                        <div class="swiper-slide autoplay1D"></div>
+                        <div class="swiper-slide autoplay2D"></div>
+                        <div class="swiper-slide autoplay3D"></div>
+                        <div class="swiper-slide autoplay4D"></div>
+                        <div class="swiper-slide autoplay5D"></div>
+                        <div class="swiper-slide autoplay6D"></div>
+                        <div class="swiper-slide autoplay7D"></div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="offers_container">
             <div id="offers_title">
@@ -273,7 +296,21 @@
                 <p>Iconic Facilities</p>
                 <p>POOL / GX ROOM / KIDS CLUB</p>
             </div>
-            <div id="facilities_box"></div>
+            <div id="facilities_box">
+                <div class="facilities_wrap">
+                    <div class="facilitiesSlider slick">
+                        <!-- <button type='button' class='slick-prev'>Previous</button> -->
+                        <!-- <button type='button' class='slick-next'>Next</button> -->
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                    </div>
+                    <!-- <button type='button' class='slick-prev'>Prev</button>
+                    <button type='button' class='slick-next'>Next</button> -->
+                </div>
+            </div>
         </section>
         <section id="parallax-window" data-parallax="scroll" data-image-src="/img/content/05MembershipSection/bg_membership.jpeg">
             <div id="membership_box">
@@ -325,6 +362,7 @@
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <script src="./js/parallax.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/main.js"></script>
