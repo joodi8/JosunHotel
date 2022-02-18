@@ -112,9 +112,36 @@
 }
 
 #room_innerBox {
-    width: 80%;
+    width: 70%;
     height: 70%;
     background-color: #fff;
+    position: relative;
+    /* padding: 60px; */
+}
+#room_title {
+    padding: 60px 60px 90px;
+}
+
+#room_title > p:first-child {
+    color: #C86B6B;
+    line-height: 20px;
+    font-family: 'Staatliches'
+}
+#room_title > p:nth-child(2) {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Staatliches'
+}
+#room_title > p:nth-child(3) {
+    color: #777777;
+}
+
+#room_innerOffers {
+    position: absolute;
+    width: 80%;
+    height: 140px;
+    margin: 0 60px;
+    border: #D7E4E8 solid 2px;
 }
 
 
@@ -319,11 +346,12 @@
 
     position: absolute;
     top: 50%;
-
+    padding: 0 40px;
+    /* margin: 0 40px; */
+    
     display: block;
 
-    width: 20px;
-    height: 20px;
+
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -335,6 +363,8 @@
     border: none;
     outline: none;
     background: transparent;
+}
+.slick-prev > img {
 }
 .slick-prev {
 
@@ -348,6 +378,11 @@
     height: 820px;
     background-color: tomato;
     position: relative;
+}
+.facilities_wrap > div:first-child {
+    height: 100%;
+    margin: 0 20px;
+    background-color: #D7E4E8;
 }
 
 

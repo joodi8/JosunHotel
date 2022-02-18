@@ -2,6 +2,7 @@
 .slick-slider
 {
     position: relative;
+    display: flex;
 
     display: block;
     box-sizing: border-box;
