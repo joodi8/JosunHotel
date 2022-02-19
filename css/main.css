@@ -104,9 +104,9 @@
 #room_textbox {
     width: 55%;
     height: 100%;
-    background-color: #859178;
+    /* background-color: #859178; */
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     /* flex-direction: column; */
 }
@@ -157,15 +157,15 @@
 
 }
 
-#dining_textbox {
+#dining_titleBox {
     width: 40%;
     height: 80%;
     display: flex;
     justify-content: flex-end;
 }
-#dining_innerText {
+#dining_lineBox {
     position: relative;
-    width: 70%;
+    width: 60%;
     height: 100%;
     background-color: #fff;
     display: flex;
@@ -175,6 +175,7 @@
 
 #dining_innerLine {
     position: absolute;
+    position: relative;
     width: 92%;
     height: 94%;
     background-color: #fff;
@@ -185,6 +186,24 @@
     background-color: #ffffff;
 }
 
+#dining_title {
+    position: absolute;
+    text-align: center;
+}
+#dining_title > p:first-child {
+    color: #C86B6B;
+    line-height: 20px;
+    font-family: 'Staatliches'
+}
+#dining_title > p:nth-child(2) {
+    font-size: 60px;
+    line-height: 60px;
+    font-family: 'Staatliches'
+}
+#dining_title > p:nth-child(3),
+#dining_title > p:nth-child(4) {
+    color: #777777;
+}
 #dining_imgbox {
     width: 60%;
     height: 80%;
@@ -235,9 +254,10 @@
 
 /* main offers page */
 #offers_container {
+    height: 200vh;
     padding-top: 100px;
     position: relative;
-    background-color: rgb(235, 149, 140);
+    /* background-color: rgb(235, 149, 140); */
 }
 #offers_title {
     position: absolute;
@@ -263,45 +283,11 @@
 #offers_box {
     border-top: #000 solid 2px;
     height: 100%;
-    background-color: rosybrown;
+    /* background-color: rosybrown; */
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
-
-.offers_innerBox {
-    display: inline-block;
-    width: 402px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 120px 0 160px;
-    padding: 0 120px;
-}
-
-.offers_innerBox.num2 {
-    margin-top: 600px;
-}
-
-.offers_innerBox.num1 {
-    background-color: bisque;
-}
-.offers_innerBox.num2 {
-    background-color: antiquewhite;
-}
-
-.offers_item {
-    width: 400px;
-    height: 600px;
-    background-color: #fff;
-    border: #000 solid 1px;
-}
-
-.offers_item {
-    margin: 160px 0;
-}
-
-
 
 /* main facilities page */
 #facilities_container {

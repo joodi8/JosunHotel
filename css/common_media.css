@@ -1,24 +1,41 @@
 @media screen and (max-width:767px){
-    #groupL {
-        width: 20%;
+    #gnb_container {
+        flex-direction: row-reverse;
     }
-    #groupR {
-        width: 20%;
+    #groupL {
+        padding: 0 20px;
     }
     
-    .top_logo {
-        width: 60%;
+    #groupL > button > img {
+        width: 30px;
+        height: 30px;
     }
-
-
+    #logoBox {
+        padding: 0 20px;
+    }
+    .top_logo > img {
+        width: 84px;
+        height: 42px;
+    }
+    #top_util {
+        font-size: 14px;
+    }
+    #groupR,
+    #top_findHotel,
+    #top_langArea,
+    #top_openOffers {
+        display: none;
+    }
+    
+    
     #all_menu{
         width: 100%;
-        height: 70%;
+        height: 100vh;
         padding-top: 10px;
         display: flex;
         justify-content: center;
         overflow: scroll;
-        z-index: 1;
+        z-index: 10;
     }
 
     .firstWrap {
@@ -91,27 +108,35 @@
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
     #groupL {
-        width: 30%;
+        padding: 0 30px;
+        
     }
+    #groupL > button > img {
+        width: 40px;
+        height: 40px;
+    }
+
     #groupR {
-        width: 30%;
+        padding: 0 30px;
     }
     
-    .top_logo {
-        width: 40%;
+    #top_findHotel,
+    #top_langArea,
+    #top_util {
+        display: none;
     }
 
 
     #all_menu{
         width: 50%;
-        height: 80%;
+        height: 100vh;
         display: flex;
         justify-content: center;
         left: 0;
         transform: unset;
         padding-top: 10px;
         overflow: scroll;
-        z-index: 1;
+        z-index: 10;
     }
 
     .firstWrap {
@@ -120,19 +145,19 @@
         transform: unset;
     }
     .firstWrap > li {
-        font-size: 30px;
+        font-size: 28px;
+        line-height: 25px;
+        
     }
     .secondWrap {
         display: flex;
         flex-direction: column;
-        /* align-items: center; */
-        padding: 4px 0;
-        font-size: 20px;
+        padding: 8px 0;
+        font-size: 18px;
         font-weight: bold;
-        /* display: none; */
     }
     .secondWrap > li {
-        padding-top: 4px;
+        padding-top: 0;
     }
 
     .lastWrap {
@@ -159,6 +184,20 @@
 }
 
 @media screen and (min-width:1024px) and (max-width: 1439px) {
+    #groupL {
+        padding: 0 30px;
+        
+    }
+    #groupR {
+        padding: 0 30px;
+    }
+    #top_findHotel {
+        padding: 0 14px;
+    }
+    #top_util {
+        padding: 0 10px;
+    }
+    
     .firstWrap {
         width: 100%;
         justify-content: space-evenly;

@@ -1,3 +1,36 @@
+// 모바일 사이즈일때 로고 이미지 변경
+$(function(){
+    $(window).resize(function(){
+    }).resize();
+});
+
+$(function(){
+    $(window).resize(function(){
+        let width = window.innerWidth;
+    }).resize();
+});
+
+
+
+$(function(){
+
+    $(window).resize(function(){
+    
+    var width = window.innerWidth;
+    
+    if(width < 768){
+    
+    $('.topLogo').attr('src', './img/header/gnb/main_logoB_column.png')
+    
+    }
+    
+    else {$('.topLogo').attr('./img/header/gnb/main_logoB.png');}
+    
+    }).resize();
+    
+    });
+
+
 let headerswiper = new Swiper(".swiperContainer.fade1", {
     spaceBetween: 30,
     effect: "fade",

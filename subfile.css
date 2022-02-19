@@ -1,0 +1,41 @@
+
+#offers_box {
+    border-top: #000 solid 2px;
+    height: 100%;
+    /* background-color: rosybrown; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.offers_innerBox {
+    display: inline-block;
+    width: 402px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 120px 0 160px;
+    padding: 0 120px;
+}
+
+.offers_innerBox.num2 {
+    margin-top: 600px;
+}
+
+.offers_innerBox.num1 {
+    background-color: bisque;
+}
+.offers_innerBox.num2 {
+    background-color: antiquewhite;
+}
+
+.offers_item {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: #000 solid 1px;
+}
+
+.offers_item {
+    margin: 160px 0;
+}

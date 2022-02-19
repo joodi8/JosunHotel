@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding');
+        :root {
+            --color-text: #fff;
+            --color-bg: #ddd;
+            --font-text: 'Nanum Gothic Coding', monospace;
+            --fontsize-text: 8vw;
+        }
+
+        body {
+            min-height: 100vh;
+            color: #000;
+            color: var(--color-text);
+            background-color: #fff;
+            background: var(--color-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: background 1s;
+        }
+
+        .sections {
+            position: relative;
+            display: block;
+            padding: 0 6vmax;
+        }
+
+        .section {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .section--image {
+            display: block;
+            position: relative;
+            max-width: 100%;
+            margin: 10vh 0 30vh auto;
+            opacity: 0;
+            transition: opacity 1s;
+        
+            .active & {
+            opacity: 1;
+            }
+
+            img {
+            display: block;
+            position: relative;
+            max-width: 90%;
+            max-height: 100vh;
+            margin: 0 0 0 auto;
+            }
+        }
+
+        .section--header {
+            font-size: calc(var(--fontsize-text));
+            font-family: var(--font-text);
+            position: absolute;
+            bottom: 5vmax;
+            left: 0;
+            padding-left: 5vmax;
+            z-index: 1000;
+            line-height: 1;
+            font-weight: 300;
+            opacity: 0;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        
+            .active & {
+            animation-name: fadeInUp;
+            }
+        }
+
+        @keyframes fadeInUp{
+            0% {
+            transform: translate3d(0,55%,0);
+            opacity:0;
+            } to {
+            opacity:1;
+            transform:translate3d(0,0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sections">
+            <div class="section active" data-bgcolor="#364652">
+            <h2 class="section--header">Bronte, Australia</h2>
+            <div class="section--image"><img src="https://images.unsplash.com/photo-1532275948649-7d97f309ef16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db3d266a0c1ec46b95f03a271a78603f&auto=format&fit=crop&w=2250&q=80" /></div>
+        </div>
+        <div class="section" data-bgcolor="#C1A5A9">
+            <h2 class="section--header">Kénitra, Morocco</h2>
+            <div class="section--image"><img src="https://images.unsplash.com/photo-1532173311168-91e999ce4e47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cf6ff267733890306ca709fa2184dd3a&auto=format&fit=crop&w=1301&q=80" /></div>
+        </div>
+        <div class="section" data-bgcolor="#4ECDC4">
+            <h2 class="section--header">Black Mountain, CA</h2>
+            <div class="section--image"><img src="https://images.unsplash.com/photo-1532275948649-7d97f309ef16?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db3d266a0c1ec46b95f03a271a78603f&auto=format&fit=crop&w=2250&q=80" /></div>
+        </div>
+        <div class="section" data-bgcolor="#D4CBE5">
+            <h2 class="section--header">Zermatt, Switzerland</h2>
+            <div class="section--image"><img src="https://images.unsplash.com/photo-1500817487388-039e623edc21?ixlib=rb-0.3.5&s=a21f754569632b81fd47dcaafe30b7c3&auto=format&fit=crop&w=2571&q=80" /></div>
+        </div>
+        <div class="section" data-bgcolor="#EDD4B2">
+            <h2 class="section--header">Yellowstone, USA</h2>
+            <div class="section--image"><img src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0a5b239a157c3a39cf32283c50f9cd0c&auto=format&fit=crop&w=934&q=80" /></div>
+        </div>
+    </div>
+    <script>
+    // Get all of the images that are marked up to fade in
+        const images = document.querySelectorAll('.js-lazyload-image');
+
+        const sections = document.querySelectorAll('.section');
+
+        let config = {
+        rootMargin: '0px',
+        threshold: 0
+        };
+
+        let observer = new IntersectionObserver((entries) => {
+        console.log(entries);
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            intersectionHandler(entry);
+        } 
+
+        });
+        }, config);
+
+        sections.forEach(section => {
+        observer.observe(section);
+        });
+
+        function intersectionHandler(entry) {
+        const current = document.querySelector('.section.active');
+        const next = entry.target;
+        const header = next.querySelector(".section--header");
+        
+        if (current) {
+        current.classList.remove('active');
+        }
+        if (next) {
+        next.classList.add('active');
+        document.body.style.setProperty("--color-bg", next.dataset.bgcolor);
+        }
+        }
+
+        images.forEach(image => {
+        observer.observe(image);
+        });
+
+        function preloadImage(img) {
+        const src = img.getAttribute('data-src');
+        if (!src) { return; }
+        img.src = src;
+        }
+    </script>
+</body>
+</html>
