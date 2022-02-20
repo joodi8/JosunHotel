@@ -1,9 +1,17 @@
 @media screen and (max-width:767px){
+
+    /* header */
+    header {
+        height: 400px;
+    }
     #gnb_container {
+        height: 70px;
         flex-direction: row-reverse;
+
+    /* gnb */
     }
     #groupL {
-        padding: 0 20px;
+        padding: 0 16px;
     }
     
     #groupL > button > img {
@@ -27,7 +35,7 @@
         display: none;
     }
     
-    
+    /* nav */
     #all_menu{
         width: 100%;
         height: 100vh;
@@ -36,6 +44,8 @@
         justify-content: center;
         overflow: scroll;
         z-index: 10;
+        top: 70px;
+        display: none;
     }
 
     .firstWrap {
@@ -67,6 +77,49 @@
     .lastWrap > li {
         padding: 2px 0;
     }
+
+    /* header slide */
+    .swiper-slide.fade1 {
+        background: url('../img/header/HeaderMain/Main01_PinL500x400.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-slide.fade2 {
+        background: url('../img/header/HeaderMain/Main02_PinL500x400.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .swiper-wrapper {
+        position: relative;
+    }
+    .swiperTextBox {
+        width: 200px;
+        height: 140px;
+        padding: 20px;
+        position: absolute;
+        top: 145px; left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .swiperTextBox > p:first-child {
+        font-size: 20px;
+    }
+    .swiperTextBox > p:nth-child(2) {
+        font-size: 40px;
+    }
+    .swiperTextBox > p:nth-child(3) {
+        font-size: 16px;
+    }
+
+
+
+    #booking_container {
+        display: none;
+    }
     
     footer {
         display: flex;
@@ -96,12 +149,16 @@
         order: 2;
     }
     #ceoBox1 {
-        flex: unset;
+        /* flex: unset; */
         flex-direction: column;
     }
     #ceoBox1 > img {
         display: block;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
+        width: 250px;
+        height: 40px;
+        margin: 0 auto;
+
     }
 }
 
