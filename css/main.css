@@ -103,8 +103,6 @@
 
 #room_textbox {
     width: 55%;
-    height: 100%;
-    /* background-color: #859178; */
     display: flex;
     justify-content: flex-end;
     align-items: center;

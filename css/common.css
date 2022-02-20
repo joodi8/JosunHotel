@@ -241,7 +241,7 @@ swiper-wrapper{
     align-items: center;
 }
 .swiper-slide.fade1 {
-    background: url('../img/header/HeaderMain/Main01_1920x1000.jpeg');
+    background: url('../img/header/HeaderMain/Main01_1920x900.jpg');
     background-size: cover;
     background-position: center;
 }

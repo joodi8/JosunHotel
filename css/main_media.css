@@ -1,5 +1,115 @@
 
 @media screen and (max-width:767px){
+
+    #room_container {
+        height: 780px;
+        background-color: #D7E4E8;
+
+    }
+    
+    #room_box {
+        width: 100%;
+        height: 100%;
+        /* display: flex; */
+        /* flex-direction: column-reverse; */
+        /* justify-content: unset; */
+        /* align-items: center; */
+        /* position: unset; */
+        transform: unset;
+        top: 0; left: 0;
+        /* position: relative; */
+
+    }
+    #room_imgbox {
+        width: 100%;
+        height: 400px;
+        position: absolute;
+        top: 40px;
+    }
+
+    #room_textbox {
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top: 480px;
+    }
+    #room_innerBox {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    #room_title {
+        width: 100%;
+        padding: 40px 0;
+        border: #D7E4E8 solid 2px;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #room_title > p:first-child {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    #room_title > p:nth-child(2) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    #room_title > p:nth-child(3) {
+        font-size: 14px;
+    }
+
+
+
+    #horizontal_line,
+    .room_innerLine.num1,
+    .room_innerLine.num2,
+    #room_innerOffers {
+        display: none;
+    }
+
+    /* dining */
+    #dining_container {
+        height: 680px;
+        justify-content: unset;
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+    #dining_titleBox {
+        width: 100%;
+        height: 60%;
+        justify-content: center;
+    }
+
+    #dining_lineBox {
+        width: 80%;
+    }
+
+    #dining_title > p:first-child {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #dining_title > p:nth-child(2) {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    #dining_title > p:nth-child(3),
+    #dining_title > p:nth-child(4) {
+        font-size: 14px;
+    }
+
+
+
+    #dining_imgbox {
+        width: 100%;
+        height: 280px;
+    }
+
+
+    /* offer */
+
     #offers_title {
         width: 220px;
         left: 50%;
@@ -63,14 +173,14 @@
 
 
     #membership_box {
-        height: 40%;
+        /* height: 40%; */
     }
     #membership_title {
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     #membership_title p:first-child {
-        font-size: 28px;
+        font-size: 40px;
         line-height: 0.8;
     }
     #membership_title p:nth-child(2) {
@@ -78,10 +188,13 @@
     }
 
     #membership_textBox {
-        padding: 0 20px;
+        padding: 0 10px;
     }
     #membership_textBox p {
         font-size: 14px;
+    }
+    #membership_textBox p:nth-child(2) {
+        display: none;
     }
 
 
@@ -89,7 +202,6 @@
         width: 100px;
         height: 32px;
         line-height: 32px;
-
         margin-top: 20px;
     }
     #membership_moreBox p {
