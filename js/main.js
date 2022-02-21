@@ -15,3 +15,11 @@ let diningSwiper = new Swiper(".swiperContainer.diningpage", {
         disableOnInteraction: false,
     },
 });
+
+$('.facilitiesMenu.01').hover(
+    function() {
+    $('#facilities_imgBox').css("background", "url(../img/content/04FacilitiesSection/Facilities_img_01.jpeg)");
+},
+function() {
+    $('#facilities_imgBox').css("background", "url(../img/content/04FacilitiesSection/Facilities_img_main.jpeg)");
+});
