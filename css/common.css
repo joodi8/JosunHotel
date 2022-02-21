@@ -36,6 +36,9 @@ header {
     justify-content: space-between;
     position: relative;
 }
+.swiper-pagination {
+    display: none;
+}
 /* gnb */
 #gnb_container {
     /* width: 100%; */
