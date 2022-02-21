@@ -301,6 +301,7 @@ swiper-wrapper{
     background-color: #e9967a;
     opacity: 0.6;
     z-index: 5;
+    display: none;
 }
 
 #sortDropdown {
