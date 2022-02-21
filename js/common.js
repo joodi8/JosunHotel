@@ -36,7 +36,6 @@ $(function(){
     const showHide = (e) => {
         const MListDrop = e.children[0];
         const displayAttr = window.getComputedStyle(MListDrop).display;
-        // let EventAttr = window.getElementById(MListDrop).attr('onclick','showHide(this)');
     
         if (displayAttr == 'none') {
             MListDrop.style.display = 'block';
