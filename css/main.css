@@ -251,7 +251,7 @@
 
 /* main offers page */
 #offers_container {
-    height: 200vh;
+    /* height: 200vh; */
     padding-top: 100px;
     position: relative;
     /* background-color: rgb(235, 149, 140); */
@@ -279,14 +279,39 @@
 
 #offers_box {
     border-top: #000 solid 2px;
-    height: 100%;
-    /* background-color: rosybrown; */
+    /* height: 100%; */
+    background-color: rosybrown;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-
-
+    /* position: relative; */
 }
+.offersWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.offersWrap.pack {
+    margin: 150px 0;
+    width: 30%;
+    background-color: thistle;
+}
+.offersWrap.event {
+    margin: 400px 0 0;
+    width: 30%;
+    background-color: rgb(138, 122, 122);
+}
+
+.contentBox {
+    width: 400px;
+    height: 600px;
+    margin: 100px 0;
+    background-color: #999;
+    border: #000 solid 1px;
+}
+
+
 
 /* main facilities page */
 #facilities_container {
