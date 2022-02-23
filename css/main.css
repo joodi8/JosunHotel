@@ -279,38 +279,109 @@
 
 #offers_box {
     border-top: #000 solid 2px;
-    /* height: 100%; */
-    background-color: rosybrown;
     display: flex;
     justify-content: center;
-    margin: 0 auto;
     /* position: relative; */
 }
 .offersWrap {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
 }
 .offersWrap.pack {
     margin: 150px 0;
-    width: 30%;
-    background-color: thistle;
+    width: 40%;
 }
 .offersWrap.event {
-    margin: 400px 0 0;
-    width: 30%;
-    background-color: rgb(138, 122, 122);
+    margin: 500px 0 0;
+    width: 40%;
 }
 
 .contentBox {
-    width: 400px;
+    width: 420px;
     height: 600px;
     margin: 100px 0;
-    background-color: #999;
     border: #000 solid 1px;
+    /* position: relative; */
+    /* display: flex;
+    flex-direction: column; */
 }
+.offersImgBox {
+    width: 408px;
+    height: 282px;
+    margin: 6px auto 0;    
+}
+.offersImgBox.pack01 {
+    background: url('../img/content/03OffersSection/Package01_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.offersImgBox.pack02 {
+    background: url('../img/content/03OffersSection/Package02_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.offersImgBox.pack03 {
+    background: url('../img/content/03OffersSection/Package03_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.offersImgBox.event01 {
+    background: url('../img/content/03OffersSection/Event01_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.offersImgBox.event02 {
+    background: url('../img/content/03OffersSection/Event02_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.offersImgBox.event03 {
+    background: url('../img/content/03OffersSection/Event03_680x470.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.textTagBox {
+    padding: 0 6px;
+}
+.Tagwrap {
+    display: flex;
+}
+.Tagwrap > p {
+    padding: 2px 10px 6px 0;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.titlewrap > p:nth-child(2) {
+    color: #C86B6B;
+}
+.titlewrap > p:nth-child(3) {
+    padding-top: 6px;
+    color: #777777;
+    font-size: 18px;
+}
+.textTagBox.pack > .titlewrap > p:first-child {
+    padding-top: 10px;
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Staatliches'
+}
+.textTagBox.pack > .titlewrap > p:nth-child(2) {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    
+}
+.textTagBox.event > .titlewrap > p:first-child {
+    padding-top: 10px;
+}
+.textTagBox.event > .titlewrap > p:first-child,
+.textTagBox.event > .titlewrap > p:nth-child(2) {
+    font-size: 40px;
+    line-height: 35px;
+    font-family: 'Staatliches'
 
+}
 
 
 /* main facilities page */
