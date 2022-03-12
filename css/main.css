@@ -529,9 +529,10 @@
 
 /* main membership page */
 #parallax-window {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    background: transparent;
 }
 #membership_box {
     width: 100%;
