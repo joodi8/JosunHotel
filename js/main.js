@@ -68,4 +68,4 @@ function() {
 
 
 $('.parallax-window').parallax({
-    imageSrc: '../img/content/05MembershipSection/bg_membership.jpeg'});
+    imageSrc: '../img/content/05MembershipSection/membership_bg.jpg'});
