@@ -67,4 +67,5 @@ function() {
 });
 
 
-$('.parallax-window').parallax({imageSrc: '../img/content/05MembershipSection/bg_membership.jpeg'});
+$('.parallax-window').parallax({
+    imageSrc: '../img/content/05MembershipSection/bg_membership.jpeg'});

@@ -392,14 +392,12 @@
     padding: 0 6px 6px;
 }
 .offersMoreBox.pack {
-    /* padding: 80px 6px 6px; */
 }
 .periodWrap > p {
     font-size: 16px;
     color: #777777;
 }
 .offersMoreBox.event {
-    /* padding: 100px 6px 20px; */
 }
 
 .moreWrap > a {
@@ -419,8 +417,6 @@
 
 /* main facilities page */
 #facilities_container {
-    /* height: 1080px; */
-    /* background-color: #859178; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -461,7 +457,6 @@
 
 .facilities_firstWrap {
     display: flex;
-    /* text-align: center; */
 }
 .facilities_firstWrap > li > span {
     font-size: 32px;
@@ -528,15 +523,15 @@
 
 
 /* main membership page */
-#parallax-window {
-    min-height: 100vh;
+.parallax-window {
+    height: 100vh;
     display: flex;
     align-items: center;
     background: transparent;
 }
 #membership_box {
     width: 100%;
-    height: 40%;
+    height: 30vh;
     background-color: #fff;
     opacity: 0.7;
     display: flex;
