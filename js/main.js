@@ -65,3 +65,6 @@ $('.facilitiesMenu.02').hover(
 function() {
     $('#facilities_imgBox').css("background", "url(../img/content/04FacilitiesSection/Facilities_img_main.jpeg)");
 });
+
+
+$('.parallax-window').parallax({imageSrc: '../img/content/05MembershipSection/bg_membership.jpeg'});
